@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koleksi Game Steam Saya</title>
+</head>
+<body>
+
+  <header>
+    <h1>Koleksi Game Steam Saya</h1>
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#daftar-game">Daftar Game</a></li>
+        <li><a href="#tambah-game">Tambah Game</a></li>
+        <li><a href="#tentang-saya">Tentang Saya</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section 1: Tabel Data & Gambar -->
+    <section id="daftar-game">
+      <h2>Daftar Koleksi Game Steam</h2>
+      
+      <figure>
+        <img src="https://cdn.mos.cms.futurecdn.net/Uz67AZ229sPiNRzmPZWkwk.jpg" 
+             alt="Tampilan pustaka game Steam milik Vida Rizki yang menampilkan deretan gambar sampul game koleksi pribadi" 
+             width="640" 
+             height="360" 
+             loading="lazy">
+        <figcaption>Pustaka koleksi game pribadi pada akun Steam.</figcaption>
+      </figure>
+
+      <table>
+        <caption>Katalog Game Steam Favorit Saya</caption>
+        <thead>
+          <tr>
+            <th scope="col">Nama Game</th>
+            <th scope="col">Pembuat</th>
+            <th scope="col">Tahun Terbit</th>
+            <th scope="col">Genre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Counter Strike 2</th>
+            <td>Valve</td>
+            <td>2023</td>
+            <td>FPS</td>
+          </tr>
+          <tr>
+            <th scope="row">Forza Horizon 4</th>
+            <td>Playground Games</td>
+            <td>2018</td>
+            <td>Racing</td>
+          </tr>
+          <tr>
+            <th scope="row">GTA 5</th>
+            <td>Rockstar Games</td>
+            <td>2013</td>
+            <td>Action-Adventure</td>
+          </tr>
+         <tr>
+            <th scope="row">Red Dead Redemtion 2</th>
+            <td>Rockstar Games</td>
+            <td>2018</td>
+            <td>Action-Adventure</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section 2: Form Tambah Data -->
+    <section id="tambah-game">
+      <h2>Form Tambah Koleksi Game</h2>
+
+      <form action="/simpan" method="post">
+        <p>
+          <label for="nama-game">Nama Game:</label>
+          <input type="text" id="nama-game" name="nama-game" required>
+        </p>
+        <p>
+          <label for="pembuat">Pembuat / Developer:</label>
+          <input type="text" id="pembuat" name="pembuat" required>
+        </p>
+        <p>
+          <label for="tahun-terbit">Tahun Terbit:</label>
+          <input type="number" id="tahun-terbit" name="tahun-terbit" min="1970" max="2026" required>
+        </p>
+        <p>
+          <label for="genre">Genre Game:</label>
+          <input type="text" id="genre" name="genre" required>
+        </p>
+        <button type="submit">Simpan Game</button>
+      </form>
+    </section>
+
+    <!-- Section Tambahan untuk Tautan Navigasi Ketiga -->
+    <section id="tentang-saya">
+      <h2>Tentang Saya</h2>
+      <p>Halaman ini dikelola oleh <strong>Vida Rizki P</strong> (NIM: 25523013) dari Kelas C sebagai bagian dari tugas mata kuliah Pengembangan Aplikasi Berbasis Web (PABW).</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Vida Rizki P · 25523013 · 2026</p>
+  </footer>
+
+</body>
+</html>
