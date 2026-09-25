@@ -1,1 +1,70 @@
 :focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+
+form-kolom {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);          /* jarak label ke isian, seragam */
+}
+ 
+label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+ 
+input, select, textarea {
+  font: inherit;                /* kolom isian ikut ukuran huruf halaman */
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-fg);
+}
+ 
+button {
+  font: inherit;
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  color: var(--color-surface);
+  cursor: pointer;
+}
+
+/* Mengatur gambar di dalam kartu */
+.kartu img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;     /* Gambar terpotong rapi menyesuaikan ukuran kartu */
+}
+
+.kartu-body {
+  padding: var(--card-pad);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.kartu-body h3 {
+  font-size: var(--text-md);
+  color: var(--color-primary);
+  margin-bottom: var(--space-1);
+}
+
+.kartu-body p {
+  font-size: var(--text-sm);
+}
+
+/* Mengatur jarak luar untuk elemen figure (wadah gambar + caption) */
+figure {
+  margin-block: var(--space-4); /* Memberikan jarak otomatis di atas dan di bawah gambar */
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);         /* Jarak antara gambar dan teks keterangannya (figcaption) */
+}
+
+/* Mengatur jarak dan tampilan teks keterangan gambar */
+figcaption {
+  font-size: var(--text-sm);
+  color: var(--color-fg);
+  margin-top: var(--space-1);  /* Jarak tambahan di bawah gambar */
+}
