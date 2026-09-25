@@ -50,3 +50,17 @@
   --card-pad:       var(--space-4);
   --section-gap:    var(--space-6);
 }
+
+:root {
+  /* Latar belakang & Teks */
+  --color-bg: #ffffff;          /* Latar belakang halaman (Putih) */
+  --color-fg: #0f172a;          /* Teks utama (Hitam/Navy Pekat agar kontras > 4.5:1) */
+  --color-fg-muted: #475569;    /* Teks sekunder/Developer (Abu-abu gelap) */
+  
+  /* Kartu & Border */
+  --color-surface: #f8fafc;     /* Latar kartu (Abu-abu sangat terang) */
+  --color-border: #94a3b8;      /* Tepi kartu (Kontras > 3:1) */
+
+  /* Aksesibilitas Fokus */
+  --color-focus: #2563eb;       /* Garis fokus tombol/input */
+}
