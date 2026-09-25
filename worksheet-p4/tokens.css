@@ -1,0 +1,52 @@
+/* ==========================================
+   LAPIS 1 — Primitif (Nilai Mentah)
+   ========================================== */
+:root {
+  /* Slate / Gray Scale */
+  --slate-50:   #F8FAFC; /* Latar halaman */
+  --slate-100:  #F1F5F9; /* Latar kartu/surface */
+  --slate-200:  #E2E8F0; /* Border/Garis tepi */
+  --slate-800:  #1E293B; /* Teks sekunder */
+  --slate-900:  #0F172A; /* Teks utama */
+
+  /* Steam Accent / Blue Palette */
+  --steam-blue: #171D25; /* Biru Steam sangat gelap */
+  --steam-navy: #1B2838; /* Biru Steam klasik */
+  --steam-cyan: #2A475E; /* Biru sedang */
+  --steam-blue-accent: #66C0F4; /* Biru terang untuk penanda/fokus */
+  --steam-sky:  #1070E0; /* Biru utama untuk tombol & link */
+
+  /* Peringatan / Danger */
+  --red-600:    #DC2626;
+
+  /* Spasi, Radius, Ukuran Teks */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+
+  --radius-md: 0.5rem;
+  --shadow-1:  0 2px 8px rgba(0, 0, 0, 0.08);
+
+  --text-sm:  0.875rem;
+  --text-md:  1rem;
+  --text-xl:  1.5rem;
+  --text-3xl: 2.25rem;
+}
+
+/* ==========================================
+   LAPIS 2 — Semantik (Peran dalam Halaman)
+   ========================================== */
+:root {
+  --color-bg:       var(--slate-50);
+  --color-fg:       var(--slate-900);
+  --color-surface:  #FFFFFF;
+  --color-border:   var(--slate-200);
+  --color-primary:  var(--steam-sky);    /* Warna tombol, link, penanda */
+  --color-danger:   var(--red-600);      /* Peringatan/invalid */
+  --color-focus:    var(--steam-sky);    /* Garis fokus papan ketik */
+
+  --card-pad:       var(--space-4);
+  --section-gap:    var(--space-6);
+}

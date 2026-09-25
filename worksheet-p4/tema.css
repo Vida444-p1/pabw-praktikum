@@ -1,0 +1,25 @@
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg:       #171D25; /* Latar belakang khas Steam */
+    --color-fg:       #F1F5F9; /* Teks terang */
+    --color-surface:  #1B2838; /* Kartu/panel Steam navy */
+    --color-border:   #2A475E; /* Garis tepi */
+    --color-primary:  #66C0F4; /* Biru terang Steam agar kontras tinggi */
+    --color-danger:   #FF8A8A;
+    --color-focus:    #66C0F4;
+    --shadow-1:      0 4px 12px rgba(0, 0, 0, 0.35);
+  }
+}
+
+
+:root:has(#tema:checked) {
+  --color-bg:       #171D25;
+  --color-fg:       #F1F5F9;
+  --color-surface:  #1B2838;
+  --color-border:   #2A475E;
+  --color-primary:  #66C0F4;
+  --color-danger:   #FF8A8A;
+  --color-focus:    #66C0F4;
+  --shadow-1:      0 4px 12px rgba(0, 0, 0, 0.35);
+}
