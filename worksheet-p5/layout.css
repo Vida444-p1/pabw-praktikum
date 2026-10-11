@@ -1,0 +1,65 @@
+/* Kerangka halaman: kepala, isi, kaki */
+.page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+}
+
+header {
+  padding-block: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header-baris {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4);
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Area isi memakai dua kolom yang dapat turun menjadi satu saat sempit. */
+main.isi {
+  display: grid;
+  grid-template-columns: 16rem minmax(0, 1fr);
+  grid-template-areas:
+    "tambah daftar"
+    "tentang daftar";
+  gap: var(--section-gap);
+  padding-block: var(--space-6);
+  min-width: 0;
+}
+
+#daftar-game { grid-area: daftar; min-width: 0; }
+#tambah-game { grid-area: tambah; min-width: 0; }
+#tentang-saya { grid-area: tentang; min-width: 0; }
+
+footer {
+  padding-block: var(--space-4);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-fg);
+  font-size: var(--text-sm);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
