@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koleksi Game Steam Saya</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
+  <link rel="stylesheet" href="responsif.css">
+</head>
+<body>
+  <div class="page">
+  <header>
+  <div class="header-baris">
+    <h1>Koleksi Game Steam Saya</h1>
+    <!-- Tombol Pengalih Tema -->
+    <label class="toggle-tema">
+      <input type="checkbox" id="switch-tema">
+      <span>Mode Gelap</span>
+    </label>
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#daftar-game">Daftar Game</a></li>
+        <li><a href="#tambah-game">Tambah Game</a></li>
+        <li><a href="#tentang-saya">Tentang Saya</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+
+  <main class="isi">
+    <!-- Section 1: Katalog Game & Gambar Banner -->
+<section id="daftar-game">
+  <h2>Daftar Koleksi Game Steam</h2>
+  
+  <figure>
+    <img src="https://cdn.mos.cms.futurecdn.net/Uz67AZ229sPiNRzmPZWkwk.jpg" 
+         alt="Tampilan pustaka game Steam milik Vida Rizki yang menampilkan deretan gambar sampul game koleksi pribadi" 
+         loading="lazy">
+    <figcaption>Pustaka koleksi game pribadi pada akun Steam.</figcaption>
+  </figure>
+
+  <!-- KATALOG KARTU GAME -->
+  <div class="galeri">
+    
+    <!-- Kartu 1: Counter Strike 2 -->
+    <article class="kartu">
+      <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/header.jpg" alt="Sampul game Counter Strike 2" loading="lazy">
+      <div class="kartu-body">
+        <h3>Counter Strike 2</h3>
+        <p><strong>Developer:</strong> Valve</p>
+        <p><strong>Tahun:</strong> 2023</p>
+        <p><strong>Genre:</strong> FPS</p>
+      </div>
+    </article>
+
+    <!-- Kartu 2: Forza Horizon 4 -->
+    <article class="kartu">
+      <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1293830/header.jpg" alt="Sampul game Forza Horizon 4" loading="lazy">
+      <div class="kartu-body">
+        <h3>Forza Horizon 4</h3>
+        <p><strong>Developer:</strong> Playground Games</p>
+        <p><strong>Tahun:</strong> 2018</p>
+        <p><strong>Genre:</strong> Racing</p>
+      </div>
+    </article>
+
+    <!-- Kartu 3: GTA 5 -->
+    <article class="kartu">
+      <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/header.jpg" alt="Sampul game GTA 5" loading="lazy">
+      <div class="kartu-body">
+        <h3>GTA 5</h3>
+        <p><strong>Developer:</strong> Rockstar Games</p>
+        <p><strong>Tahun:</strong> 2013</p>
+        <p><strong>Genre:</strong> Action-Adventure</p>
+      </div>
+    </article>
+
+    <!-- Kartu 4: Red Dead Redemption 2 -->
+    <article class="kartu">
+      <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg" alt="Sampul game Red Dead Redemption 2" loading="lazy">
+      <div class="kartu-body">
+        <h3>Red Dead Redemption 2</h3>
+        <p><strong>Developer:</strong> Rockstar Games</p>
+        <p><strong>Tahun:</strong> 2018</p>
+        <p><strong>Genre:</strong> Action-Adventure</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+    <!-- Section 2: Form Tambah Data -->
+    <section id="tambah-game">
+      <h2>Form Tambah Koleksi Game</h2>
+
+      <form action="/simpan" method="post">
+        <p>
+          <label for="nama-game">Nama Game:</label>
+          <input type="text" id="nama-game" name="nama-game" required>
+        </p>
+        <p>
+          <label for="pembuat">Pembuat / Developer:</label>
+          <input type="text" id="pembuat" name="pembuat" required>
+        </p>
+        <p>
+          <label for="tahun-terbit">Tahun Terbit:</label>
+          <input type="number" id="tahun-terbit" name="tahun-terbit" min="1970" max="2026" required>
+        </p>
+        <p>
+          <label for="genre">Genre Game:</label>
+          <input type="text" id="genre" name="genre" required>
+        </p>
+        <button type="submit">Simpan Game</button>
+      </form>
+    </section>
+
+    <!-- Section Tambahan untuk Tautan Navigasi Ketiga -->
+    <section id="tentang-saya">
+      <h2>Tentang Saya</h2>
+      <p>Halaman ini dikelola oleh <strong>Vida Rizki P</strong> (NIM: 25523013) dari Kelas C sebagai bagian dari tugas mata kuliah Pengembangan Aplikasi Berbasis Web (PABW).</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Vida Rizki P · 25523013 · 2026</p>
+  </footer>
+  </div>
+
+</body>
+</html>
