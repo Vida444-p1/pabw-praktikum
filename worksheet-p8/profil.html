@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Mahasiswa</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
+  <link rel="stylesheet" href="responsif.css">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="header-baris">
+        <div>
+          <h1 id="nama-profil">Profil Mahasiswa</h1>
+          <p id="peran-profil"></p>
+        </div>
+        <nav aria-label="Navigasi utama">
+          <ul>
+            <li><a href="#tentang-saya">Tentang</a></li>
+            <li><a href="#keahlian">Keahlian</a></li>
+            <li><a href="#proyek">Proyek</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="isi">
+      <section id="proyek">
+        <h2>Proyek</h2>
+        <p id="jumlah-proyek"></p>
+        <div class="galeri" id="daftar-proyek"></div>
+      </section>
+
+      <section id="keahlian">
+        <h2>Keahlian</h2>
+        <p id="ringkasan-keahlian"></p>
+        <ul id="daftar-keahlian"></ul>
+      </section>
+
+      <section id="tentang-saya">
+        <h2>Tentang Saya</h2>
+        <p id="kalimat-perkenalan"></p>
+        <p>NIM: <span id="nim-profil"></span></p>
+        <p>Kelas: <span id="kelas-profil"></span></p>
+        <p>Lokasi: <span id="lokasi-profil"></span></p>
+        <h3>Contoh hasil pencarian proyek</h3>
+        <p id="proyek-pilihan"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Halaman profil - data ditata dengan JavaScript ES6+.</p>
+    </footer>
+  </div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
