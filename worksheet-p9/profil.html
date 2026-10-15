@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Mahasiswa</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
+  <link rel="stylesheet" href="responsif.css">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="header-baris">
+        <div>
+          <h1 id="nama-profil">Profil Mahasiswa</h1>
+          <p id="peran-profil"></p>
+        </div>
+        <nav aria-label="Navigasi utama">
+          <ul>
+            <li><a href="#tentang-saya">Tentang</a></li>
+            <li><a href="#keahlian">Keahlian</a></li>
+            <li><a href="#proyek">Proyek</a></li>
+            <li><a href="#form-proyek">Tambah proyek</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="isi">
+      <section id="proyek">
+        <h2>Proyek</h2>
+        <p id="jumlah-proyek"></p>
+        <div class="filter-row" id="filter-proyek" aria-label="Filter proyek">
+          <button type="button" class="filter-button active" data-category="all" aria-pressed="true">Semua</button>
+          <button type="button" class="filter-button" data-category="web" aria-pressed="false">Web</button>
+          <button type="button" class="filter-button" data-category="design" aria-pressed="false">Design</button>
+          <button type="button" class="filter-button" data-category="responsive" aria-pressed="false">Responsif</button>
+        </div>
+        <p id="empty-projects" role="status" hidden>Belum ada proyek pada kategori ini.</p>
+        <div class="galeri" id="daftar-proyek"></div>
+      </section>
+
+      <section id="keahlian">
+        <h2>Keahlian</h2>
+        <p id="ringkasan-keahlian"></p>
+        <ul id="daftar-keahlian"></ul>
+      </section>
+
+      <section id="tentang-saya">
+        <h2>Tentang Saya</h2>
+        <p id="kalimat-perkenalan"></p>
+        <p>NIM: <span id="nim-profil"></span></p>
+        <p>Kelas: <span id="kelas-profil"></span></p>
+        <p>Lokasi: <span id="lokasi-profil"></span></p>
+      </section>
+
+      <section id="form-proyek">
+        <h2>Tambah Proyek</h2>
+        <form id="project-form" novalidate>
+          <p>
+            <label for="judul-proyek">Nama proyek</label>
+            <input id="judul-proyek" name="judul" type="text" required aria-describedby="error-judul-proyek">
+            <span class="error-message" id="error-judul-proyek" aria-live="polite"></span>
+          </p>
+          <p>
+            <label for="kategori-proyek">Kategori</label>
+            <select id="kategori-proyek" name="kategori" required aria-describedby="error-kategori-proyek">
+              <option value="">Pilih kategori</option>
+              <option value="web">Web</option>
+              <option value="design">Design</option>
+              <option value="responsive">Responsif</option>
+            </select>
+            <span class="error-message" id="error-kategori-proyek" aria-live="polite"></span>
+          </p>
+          <p>
+            <label for="tahun-proyek">Tahun</label>
+            <input id="tahun-proyek" name="tahun" type="number" min="2000" max="2026" required aria-describedby="error-tahun-proyek">
+            <span class="error-message" id="error-tahun-proyek" aria-live="polite"></span>
+          </p>
+          <p>
+            <label for="deskripsi-proyek">Deskripsi</label>
+            <textarea id="deskripsi-proyek" name="deskripsi" rows="3" required aria-describedby="error-deskripsi-proyek"></textarea>
+            <span class="error-message" id="error-deskripsi-proyek" aria-live="polite"></span>
+          </p>
+          <button id="submit-project" type="submit">Simpan proyek</button>
+          <p id="form-success" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Halaman profil - data ditata dengan JavaScript ES6+.</p>
+    </footer>
+  </div>
+  <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/dom.js"></script>
+</body>
+</html>

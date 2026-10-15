@@ -1,0 +1,38 @@
+/* Dasar mobile-first: satu kolom, berlaku di semua lebar. */
+.isi {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "daftar"
+    "tambah"
+    "tentang";
+}
+
+.galeri {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tablet: galeri dua kolom. */
+@media (min-width: 48rem) {
+  .galeri {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Desktop: form dan tentang menjadi sidebar di samping katalog. */
+@media (min-width: 60rem) {
+  .isi {
+    grid-template-columns: 16rem minmax(0, 1fr);
+    grid-template-areas:
+      "tambah daftar"
+      "tentang daftar";
+  }
+
+  .galeri {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
