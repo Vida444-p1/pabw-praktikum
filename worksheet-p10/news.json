@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Menyusun layout profil dengan grid responsif",
+    "category": "Layout",
+    "summary": "Catatan praktik tentang kolom adaptif dan tampilan mobile-first.",
+    "author": "Catatan PABW"
+  },
+  {
+    "title": "Memakai design token untuk tema halaman",
+    "category": "Design",
+    "summary": "Warna, jarak, dan radius dikumpulkan sebagai nilai yang dapat digunakan ulang.",
+    "author": "Catatan PABW"
+  },
+  {
+    "title": "Membangun komponen dari data JSON",
+    "category": "JavaScript",
+    "summary": "Data JSON diubah menjadi kartu menggunakan elemen DOM dan textContent.",
+    "author": "Catatan PABW"
+  }
+]
